@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0px 20px;
+    background-color: aqua;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+}
+header nav .nav-sup-der{
+    width: auto;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    background-color:cadetblue;
+}
+header nav .nav-sup-der a{
+margin-right: 10px;
+}
