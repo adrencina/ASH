@@ -1,38 +1,70 @@
+
+/* Orden:
+1- Posicionamiento.
+2- Modelo caja (box model).
+3- Tipografía.
+4- Visuales.
+5- Otros.
+*/
+
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
 html{
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
 }
+
 a{
     text-decoration: none;
     cursor: pointer;
 }
+
 header{
-    width: auto;
-    height: 50px;
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content:space-between;
-    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 250px;
+    text-align: center;
     background-color: aqua;
 }
+
+a img{
+    width: 50px;
+    height: 30px;
+}
+
+header h1{
+    margin-top: 10px;
+}
+
+header p{
+    margin-top: 5px;
+}
+
+
 header nav{
     display: flex;
     justify-content: center;
 }
 header nav .nav-sup-der{
-    width: auto;
-    height: auto;
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 30px;
+    margin-top: 10px;
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
-    background-color:cadetblue;
+    background-color:rgb(68, 180, 184);
 }
 header nav .nav-sup-der a{
-margin-right: 10px;
+margin: 0px 5px;
 }
